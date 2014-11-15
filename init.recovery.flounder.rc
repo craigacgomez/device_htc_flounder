@@ -1,3 +1,6 @@
+on early-init
+    setenforce permissive
+
 on init
     start watchdogd
 
