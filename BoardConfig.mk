@@ -115,7 +115,8 @@ BOARD_SEPOLICY_UNION := \
 	tee.te \
 	te_macros \
 	touch_fusion.te \
-	vold.te
+	vold.te \
+	mac_permissions.xml
 
 TARGET_USES_64_BIT_BCMDHD := true
 TARGET_USES_64_BIT_BINDER := true
