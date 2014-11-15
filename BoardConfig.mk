@@ -114,7 +114,8 @@ BOARD_SEPOLICY_UNION := \
 	system_server.te \
 	tee.te \
 	te_macros \
-	touch_fusion.te
+	touch_fusion.te \
+	vold.te
 
 TARGET_USES_64_BIT_BCMDHD := true
 TARGET_USES_64_BIT_BINDER := true
