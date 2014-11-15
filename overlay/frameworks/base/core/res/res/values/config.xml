@@ -217,4 +217,13 @@
 
     <!-- Is the device capable of hot swapping an UICC Card -->
     <bool name="config_hotswapCapable">true</bool>
+
+    <!-- Location services providers -->
+    <string-array name="config_locationProviderPackageNames" translatable="false">
+        <!-- The standard AOSP fused location provider -->
+        <item>com.android.location.fused</item>
+        <!-- The Google Network Location Services location providers -->
+        <item>com.google.android.location</item>
+        <item>com.google.android.gms</item>
+    </string-array>
 </resources>
