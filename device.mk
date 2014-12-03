@@ -284,8 +284,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=volantis \
     BUILD_DISPLAY_ID="Lollipopalooza $(BUILD_ID) $(shell date +%Y%m%d)" \
-    BUILD_FINGERPRINT="google/volantis/flounder:5.0/LRX21Q/1573789:user/release-keys" \
-    PRIVATE_BUILD_DESC="volantis-user 5.0 LRX21Q 1573789 release-keys"
+    BUILD_FINGERPRINT="google/volantis/flounder:5.0.1/LRX22C/1602158:user/release-keys" \
+    PRIVATE_BUILD_DESC="volantis-user 5.0.1 LRX22C 1602158 release-keys"
 
 # add verity dependencies
 $(call inherit-product, build/target/product/verity.mk)
