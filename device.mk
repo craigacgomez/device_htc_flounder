@@ -222,7 +222,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.bt.bdaddr_path=/sys/module/flounder_bdaddress/parameters/bdaddress \
     ro.frp.pst=/dev/block/platform/sdhci-tegra.3/by-name/PST \
     ro.ril.def.agps.mode=1 \
-    persist.tegra.compositor=glcomposer \
+    persist.tegra.compositor=glcomposer
 
 # Google services properties
 PRODUCT_PROPERTY_OVERRIDES := \
@@ -235,7 +235,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.setupwizard.network_required=true \
     ro.setupwizard.require_network=wifi \
     ro.setupwizard.gservices_delay=-1 \
-    keyguard.no_require_sim=true \
+    keyguard.no_require_sim=true
 
 # Facelock properties
 PRODUCT_PROPERTY_OVERRIDES := \
@@ -255,7 +255,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
     fmas.spkr_2ch=35,25 \
     fmas.spkr_angles=10 \
     fmas.spkr_sgain=0 \
-    media.aac_51_output_enabled=true \
+    media.aac_51_output_enabled=true
 
 # setup dalvik vm configs.
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
