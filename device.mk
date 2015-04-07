@@ -231,11 +231,24 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.com.google.clientidbase=android-google \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.error.receiver.system.apps=com.google.android.gms \
+    profiler.force_disable_err_rpt=1 \
+    profiler.force_disable_ulog=1 \
     ro.setupwizard.enterprise_mode=1 \
     ro.setupwizard.network_required=true \
     ro.setupwizard.require_network=wifi \
     ro.setupwizard.gservices_delay=-1 \
-    keyguard.no_require_sim=true
+    keyguard.no_require_sim=true \
+    ro.config.nocheckin=1
+
+# Performance & quality properties
+PRODUCT_PROPERTY_OVERRIDES := \
+    persist.sys.use.dithering=1 \
+    persist.sys.purgeable_assets=1
+
+# Tethering properties
+PRODUCT_PROPERTY_OVERRIDES := \
+    net.tethering.noprovisioning=true \
+    persist.sys.dun.override=0
 
 # Facelock properties
 PRODUCT_PROPERTY_OVERRIDES := \
@@ -256,6 +269,23 @@ PRODUCT_PROPERTY_OVERRIDES := \
     fmas.spkr_angles=10 \
     fmas.spkr_sgain=0 \
     media.aac_51_output_enabled=true
+
+# Networking tweaks
+PRODUCT_PROPERTY_OVERRIDES := \
+    net.dns1=8.8.8.8 \
+    net.dns2=8.8.4.4 \
+    net.rmnet0.dns1=8.8.8.8 \
+    net.rmnet0.dns2=8.8.4.4 \
+    net.ppp0.dns1=8.8.8.8 \
+    net.ppp0.dns2=8.8.4.4 \
+    net.wlan0.dns1=8.8.8.8 \
+    net.wlan0.dns2=8.8.4.4 \
+    net.eth0.dns1=8.8.8.8 \
+    net.eth0.dns2=8.8.4.4 \
+    net.gprs.dns1=8.8.8.8 \
+    net.gprs.dns2=8.8.4.4 \
+    persist.telephony.support.ipv6=1 \
+    persist.telephony.support.ipv4=1
 
 # setup dalvik vm configs.
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
