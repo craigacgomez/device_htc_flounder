@@ -223,6 +223,9 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.frp.pst=/dev/block/platform/sdhci-tegra.3/by-name/PST \
     ro.ril.def.agps.mode=1 \
     persist.tegra.compositor=glcomposer \
+
+# Google services properties
+PRODUCT_PROPERTY_OVERRIDES := \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
     ro.com.google.clientidbase=android-google \
@@ -233,12 +236,18 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.setupwizard.require_network=wifi \
     ro.setupwizard.gservices_delay=-1 \
     keyguard.no_require_sim=true \
+
+# Facelock properties
+PRODUCT_PROPERTY_OVERRIDES := \
     ro.facelock.black_timeout=700 \
     ro.facelock.det_timeout=1500 \
     ro.facelock.rec_timeout=2500 \
     ro.facelock.lively_timeout=2500 \
     ro.facelock.est_max_time=500 \
     ro.facelock.use_intro_anim=true \
+
+# Media properties
+PRODUCT_PROPERTY_OVERRIDES := \
     camera.flash_off=0 \
     drm.service.enabled=true \
     ro.com.widevine.cachesize=16777216 \
@@ -247,11 +256,14 @@ PRODUCT_PROPERTY_OVERRIDES := \
     fmas.spkr_angles=10 \
     fmas.spkr_sgain=0 \
     media.aac_51_output_enabled=true \
-    dalvik.vm.dex2oat-flags="--compiler-filter=interpret-only" \
-    dalvik.vm.image-dex2oat-flags=""
 
 # setup dalvik vm configs.
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
+
+# Dalvik/ART properties
+PRODUCT_PROPERTY_OVERRIDES := \
+    dalvik.vm.dex2oat-flags="--compiler-filter=interpret-only" \
+    dalvik.vm.image-dex2oat-flags=""
 
 # set default USB configuration
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
