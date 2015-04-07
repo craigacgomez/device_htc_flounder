@@ -262,8 +262,8 @@ $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-he
 
 # Dalvik/ART properties
 PRODUCT_PROPERTY_OVERRIDES := \
-    dalvik.vm.dex2oat-flags="--compiler-filter=interpret-only" \
-    dalvik.vm.image-dex2oat-flags=""
+    dalvik.vm.dex2oat-filter=everything \
+    dalvik.vm.image-dex2oat-filter=everything
 
 # set default USB configuration
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
