@@ -225,7 +225,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
     persist.tegra.compositor=glcomposer
 
 # Google services properties
-PRODUCT_PROPERTY_OVERRIDES := \
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
     ro.com.google.clientidbase=android-google \
@@ -241,17 +241,17 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.config.nocheckin=1
 
 # Performance & quality properties
-PRODUCT_PROPERTY_OVERRIDES := \
+PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.use.dithering=1 \
     persist.sys.purgeable_assets=1
 
 # Tethering properties
-PRODUCT_PROPERTY_OVERRIDES := \
+PRODUCT_PROPERTY_OVERRIDES += \
     net.tethering.noprovisioning=true \
     persist.sys.dun.override=0
 
 # Facelock properties
-PRODUCT_PROPERTY_OVERRIDES := \
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.facelock.black_timeout=400 \
     ro.facelock.det_timeout=1500 \
     ro.facelock.rec_timeout=2500 \
@@ -260,7 +260,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.facelock.use_intro_anim=false
 
 # Media properties
-PRODUCT_PROPERTY_OVERRIDES := \
+PRODUCT_PROPERTY_OVERRIDES += \
     camera.flash_off=0 \
     drm.service.enabled=true \
     ro.com.widevine.cachesize=16777216 \
@@ -271,7 +271,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
     media.aac_51_output_enabled=true
 
 # Networking tweaks
-PRODUCT_PROPERTY_OVERRIDES := \
+PRODUCT_PROPERTY_OVERRIDES += \
     net.dns1=8.8.8.8 \
     net.dns2=8.8.4.4 \
     net.rmnet0.dns1=8.8.8.8 \
@@ -291,7 +291,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
 # Dalvik/ART properties
-PRODUCT_PROPERTY_OVERRIDES := \
+PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-filter=everything \
     dalvik.vm.image-dex2oat-filter=everything
 
