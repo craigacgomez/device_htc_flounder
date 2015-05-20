@@ -337,8 +337,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=volantis \
     BUILD_DISPLAY_ID="Lollipopalooza $(BUILD_ID) $(shell date +%Y%m%d)" \
-    BUILD_FINGERPRINT="google/volantis/flounder:5.0.1/LRX22C/1602158:user/release-keys" \
-    PRIVATE_BUILD_DESC="volantis-user 5.0.1 LRX22C 1602158 release-keys"
+    BUILD_FINGERPRINT="google/volantis/flounder:5.1.1/LMY47X/1849464:user/release-keys" \
+    PRIVATE_BUILD_DESC="volantis-user 5.1.1 LMY47X 1849464 release-keys"
 
 $(call inherit-product-if-exists, hardware/nvidia/tegra132/tegra132.mk)
 $(call inherit-product-if-exists, vendor/nvidia/proprietary-tegra132/tegra132-vendor.mk)
