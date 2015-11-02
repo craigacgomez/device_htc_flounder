@@ -290,3 +290,34 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_DISPLAY_ID="Lollipopalooza $(BUILD_ID) $(shell date +%Y%m%d)" \
     BUILD_FINGERPRINT="google/volantis/flounder:6.0/MRA58K/2256973:user/release-keys" \
     PRIVATE_BUILD_DESC="volantis-user 6.0 MRA58K 2256973 release-keys"
+
+# Google properties
+PRODUCT_PROPERTY_OVERRIDES := \
+    ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
+    ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
+    ro.com.google.clientidbase=android-google \
+    ro.com.android.wifi-watchlist=GoogleGuest \
+    ro.error.receiver.system.apps=com.google.android.gms \
+    ro.setupwizard.enterprise_mode=1 \
+    ro.setupwizard.require_network=any \
+    keyguard.no_require_sim=true
+
+# Facelock properties
+PRODUCT_PROPERTY_OVERRIDES := \
+    ro.facelock.black_timeout=700 \
+    ro.facelock.det_timeout=1500 \
+    ro.facelock.rec_timeout=2500 \
+    ro.facelock.lively_timeout=2500 \
+    ro.facelock.est_max_time=500 \
+    ro.facelock.use_intro_anim=true
+
+# Media properties
+PRODUCT_PROPERTY_OVERRIDES := \
+    camera.flash_off=0 \
+    drm.service.enabled=true \
+    ro.com.widevine.cachesize=16777216 \
+    fmas.spkr_6ch=35,20,110 \
+    fmas.spkr_2ch=35,25 \
+    fmas.spkr_angles=10 \
+    fmas.spkr_sgain=0 \
+    media.aac_51_output_enabled=true
