@@ -40,7 +40,6 @@ endif
 
 LOCAL_FSTAB := $(LOCAL_PATH)/fstab.flounder
 
-
 TARGET_RECOVERY_FSTAB = $(LOCAL_FSTAB)
 
 PRODUCT_COPY_FILES := \
@@ -159,7 +158,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/qct/lib64_vendor/libmdmdetect.so:vendor/lib64/libmdmdetect.so \
     $(LOCAL_PATH)/gps/qct/lib64_vendor/libperipheral_client.so:vendor/lib64/libperipheral_client.so
 
-
 # NFC feature + config files
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
@@ -238,6 +236,7 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     libhtcacoustic \
     libnvvisualizer
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.audio.monitorRotation=true
 
@@ -284,3 +283,10 @@ $(call inherit-product-if-exists, vendor/htc/flounder/audio/tfa/device-vendor-tf
 # Add dependency of the proprietary keystore.flounder module.
 PRODUCT_PACKAGES += \
     libkeymaster_messages
+
+# overwrite product specific build properties
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=volantis \
+    BUILD_DISPLAY_ID="Lollipopalooza $(BUILD_ID) $(shell date +%Y%m%d)" \
+    BUILD_FINGERPRINT="google/volantis/flounder:6.0/MRA58K/2256973:user/release-keys" \
+    PRIVATE_BUILD_DESC="volantis-user 6.0 MRA58K 2256973 release-keys"
