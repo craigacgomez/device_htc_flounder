@@ -100,3 +100,6 @@
 
 # tlk_daemon
 /vendor/bin/tlk_daemon                 u:object_r:tee_exec:s0
+
+# sysinit
+/system/bin/sysinit                    u:object_r:sysinit_exec:s0
