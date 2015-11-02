@@ -21,12 +21,6 @@
 # lines, aosp and flounder, hence its name.
 #
 
-# Live Wallpapers
-PRODUCT_PACKAGES += \
-        rild \
-        CarrierConfig \
-        Launcher3
-
 PRODUCT_PROPERTY_OVERRIDES := \
         net.dns1=8.8.8.8 \
         net.dns2=8.8.4.4
