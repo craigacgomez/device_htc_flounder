@@ -339,3 +339,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Sysinit
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/sysinit:system/bin/sysinit
+
+# Bootanimation
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/bootanimation.zip:system/media/bootanimation.zip
