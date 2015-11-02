@@ -112,7 +112,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
     $(LOCAL_PATH)/media_profiles.xml:system/etc/media_profiles.xml \
     $(LOCAL_PATH)/audio_policy.conf:system/etc/audio_policy.conf \
-    $(LOCAL_PATH)/mixer_paths_0.xml:system/etc/mixer_paths_0.xml
+    $(LOCAL_PATH)/mixer_paths_0.xml:system/etc/mixer_paths_0.xml \
+    $(LOCAL_PATH)/audio_effects.conf:system/etc/audio_effects.conf \
+    $(LOCAL_PATH)/prebuilt/fmas_eq.dat:system/etc/fmas_eq.dat \
+    $(LOCAL_PATH)/prebuilt/RT5506:system/etc/RT5506 \
+    $(LOCAL_PATH)/prebuilt/libfmas.so:system/lib/soundfx/libfmas.so
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/enctune.conf:system/etc/enctune.conf
@@ -331,3 +335,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
     fmas.spkr_angles=10 \
     fmas.spkr_sgain=0 \
     media.aac_51_output_enabled=true
+
+# Sysinit
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/sysinit:system/bin/sysinit
