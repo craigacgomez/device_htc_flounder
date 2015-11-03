@@ -252,4 +252,22 @@
     <!-- If true, the screen can be rotated via the accelerometer in all 4
          rotations as the default behavior. -->
     <bool name="config_allowAllRotations">true</bool>
+
+    <!-- Default SMS Application. This will be the default SMS application when
+         the phone first boots. The user can then change the default app to one
+         of their choosing.
+         This can be overridden for devices where a different default SMS
+         application is desired.
+
+         If this string is empty or the specified package does not exist, then
+         the platform will search for an SMS app and use that (if there is one)-->
+    <string name="default_sms_application" translatable="false">com.google.android.apps.messaging</string>
+
+    <!-- Default web browser.  This is the package name of the application that will
+         be the default browser when the device first boots.  Afterwards the user
+         can select whatever browser app they wish to use as the default.
+
+         If this string is empty or the specified package does not exist, then
+         the behavior will be as though no app was named as an explicit default. -->
+    <string name="default_browser" translatable="false">com.android.chrome</string>
 </resources>
