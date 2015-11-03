@@ -58,11 +58,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.recovery.flounder.rc:root/init.recovery.flounder64.rc \
     $(LOCAL_PATH)/ueventd.flounder.rc:root/ueventd.flounder64.rc
 
-# Superuser
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/su:root/sbin/su \
-    $(LOCAL_PATH)/prebuilt/Superuser.apk:/system/priv-app/Superuser/Superuser.apk
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/touch/touch_fusion.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/touch_fusion.cfg \
     $(LOCAL_PATH)/touch/maxim_fp35.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/maxim_fp35.bin \
