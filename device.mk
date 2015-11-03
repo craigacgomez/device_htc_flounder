@@ -294,7 +294,7 @@ PRODUCT_PACKAGES += \
 # overwrite product specific build properties
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=volantis \
-    BUILD_DISPLAY_ID="Lollipopalooza $(BUILD_ID) $(shell date +%Y%m%d)" \
+    BUILD_DISPLAY_ID="Marshmallicious $(BUILD_ID) $(shell date +%Y%m%d)" \
     BUILD_FINGERPRINT="google/volantis/flounder:6.0/MRA58K/2256973:user/release-keys" \
     PRIVATE_BUILD_DESC="volantis-user 6.0 MRA58K 2256973 release-keys"
 
