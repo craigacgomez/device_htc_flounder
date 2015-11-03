@@ -270,4 +270,7 @@
          If this string is empty or the specified package does not exist, then
          the behavior will be as though no app was named as an explicit default. -->
     <string name="default_browser" translatable="false">com.android.chrome</string>
+
+    <!-- ComponentName of the default dream (Settings.Secure.DEFAULT_SCREENSAVER_COMPONENT) -->
+    <string name="config_dreamsDefaultComponent" translatable="false">com.android.systemui/com.android.systemui.DessertCaseDream</string>
 </resources>
