@@ -292,8 +292,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=volantis \
     BUILD_DISPLAY_ID="Marshmallicious $(BUILD_ID) $(shell date +%Y%m%d)" \
-    BUILD_FINGERPRINT="google/volantis/flounder:6.0/MRA58N/2289998:user/release-keys" \
-    PRIVATE_BUILD_DESC="volantis-user 6.0 MRA58N 2289998 release-keys"
+    BUILD_FINGERPRINT="google/volantis/flounder:6.0.1/MMB29K/2419427:user/release-keys" \
+    PRIVATE_BUILD_DESC="volantis-user 6.0.1 MMB29K 2419427 release-keys"
 
 # Google properties
 PRODUCT_PROPERTY_OVERRIDES += \
